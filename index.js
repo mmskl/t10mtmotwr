@@ -96,7 +96,7 @@ http.createServer(async (req, res) => {
                 item = {
                     title: title,
                     // TF doesn't keep links to all archive pages
-                    link: 'https://torrentfreak.com/top-10-most-torrented-pirated-movies/',
+                    link: 'https://torrentfreak.com/top-10-most-torrented-pirated-movies?hash=' + hash,
                     description: table,
                 }
 
