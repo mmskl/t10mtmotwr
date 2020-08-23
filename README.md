@@ -38,4 +38,4 @@ You can set following env vars:
   * CACHE_VALIDITY - how long cache is valid (in seconds)
 
 
-## [https://t10mtmotwr.gargantua.xyz](Demo)
+## [Demo](https://t10mtmotwr.gargantua.xyz)
