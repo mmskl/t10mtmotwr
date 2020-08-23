@@ -8,11 +8,12 @@ const flatCache = require('flat-cache')
 const cache = flatCache.load('8ec10f93dd39170d70e853af230c5a8159520d22', path.resolve('./cache'));
 
 
-const APP_PORT = process.env.PORT || 5033;
+const APP_PORT = process.env.APP_PORT || 5033;
+const APP_HOST = process.env.APP_HOST || '127.0.0.1';
+
 
 // in seconds
-const CACHE_VALIDITY = 10
-// const CACHE_VALIDITY = process.env.CACHE_VALIDITY || (240 * 60);
+const CACHE_VALIDITY = process.env.CACHE_VALIDITY || (240 * 60);
 
 
 const TEMPLATE = `<?xml version="1.0" encoding="UTF-8" ?>
@@ -127,6 +128,6 @@ http.createServer(async (req, res) => {
 
     ;
 
-}).listen(APP_PORT, '0.0.0.0');
+}).listen(APP_PORT, APP_HOST);
 
 
